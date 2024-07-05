@@ -19,6 +19,6 @@ jobs:
     - uses: actions/checkout@v4
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
-        bundle: megasync.flatpak
+        bundle: megasync-nocrashhandler .flatpak
         manifest-path: nz.mega.MEGAsync.yml
         cache-key: flatpak-builder-${{ github.sha }}
